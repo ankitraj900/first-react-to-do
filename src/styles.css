@@ -1,0 +1,103 @@
+/* Center everything in the app */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.app-container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 5rem;
+    color: #13171f;
+}
+
+/* TaskForm styles */
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #45a049;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+span {
+    cursor: pointer;
+}
+
+/* Checkbox and task completion styling */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button and task deletion styling */
+.task-actions button {
+    margin-left: 10px;
+    background-color: #f44336;
+}
+
+.task-actions button:hover {
+    background-color: #e53935;
+}
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+    background-color: #555;
+    color: white;
+}
